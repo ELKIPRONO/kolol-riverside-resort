@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Spa, Utensils, Wifi, MapPin, Bed, Users, Wine, Coffee, Footprints, Phone, Mail } from 'lucide-react';
+import { Bath, Utensils, Wifi, MapPin, Bed, Users, Wine, Coffee, Footprints, Phone, Mail } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import WhatsAppButton from '@/components/WhatsAppButton';
 import RoomCard from '@/components/RoomCard';
@@ -181,7 +181,7 @@ const Index = () => {
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             <AmenityCard
-              icon={<Spa size={36} />}
+              icon={<Bath size={36} />}
               title="Spa & Wellness"
               description="Rejuvenate your body and mind with our range of spa treatments and wellness activities."
             />
