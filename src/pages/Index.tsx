@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Bath, Utensils, Wifi, MapPin, Bed, Users, Wine, Coffee, Footprints, Phone, Mail } from 'lucide-react';
 import Navbar from '@/components/Navbar';
@@ -54,7 +53,7 @@ const Index = () => {
       <section id="home" className="relative h-screen">
         <div className="absolute inset-0">
           <img 
-            src="https://images.unsplash.com/photo-1501117716987-67454ecc8787?q=80&w=2796&auto=format&fit=crop" 
+            src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=3506&auto=format&fit=crop" 
             alt="Kolol Resort" 
             className="w-full h-full object-cover"
           />
