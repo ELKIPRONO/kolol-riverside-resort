@@ -38,15 +38,7 @@ const Navbar = () => {
       )}
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
-        <a href="#home" className="flex items-center space-x-3">
-          <img 
-            src="https://images.unsplash.com/photo-1482938289607-e9573fc25ebb" 
-            alt="Kolol Resort Logo" 
-            className={cn(
-              'h-10 w-10 rounded-full object-cover',
-              isScrolled ? 'border-2 border-resort-dark' : 'border-2 border-white'
-            )}
-          />
+        <a href="#home" className="flex items-center">
           <h1 className={cn(
             'font-serif text-2xl font-bold',
             isScrolled ? 'text-resort-dark' : 'text-white text-shadow'
