@@ -40,14 +40,13 @@ const Navbar = () => {
       <div className="container mx-auto px-4 flex justify-between items-center">
         <a href="#home" className="flex items-center">
           <h1 className={cn(
-            'font-serif text-2xl font-bold',
-            isScrolled ? 'text-resort-dark' : 'text-white text-shadow'
+            'font-serif text-2xl font-bold text-white',
+            isScrolled ? 'text-opacity-100' : 'text-opacity-100'
           )}>
             Kolol Resort
           </h1>
         </a>
 
-        {/* Mobile menu button */}
         <button 
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           className="lg:hidden"
@@ -59,7 +58,6 @@ const Navbar = () => {
           )}
         </button>
 
-        {/* Desktop Navigation */}
         <div className="hidden lg:flex space-x-8">
           {navLinks.map((link) => (
             <a
@@ -76,7 +74,6 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Navigation */}
       {isMenuOpen && (
         <div className="lg:hidden absolute top-full left-0 right-0 bg-white/95 backdrop-blur-sm shadow-md p-4 animate-fade-in">
           <div className="flex flex-col space-y-4">
