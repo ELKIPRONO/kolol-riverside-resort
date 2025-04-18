@@ -233,7 +233,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <SectionTitle 
             title="Contact Us" 
-            subtitle="We're here to assist you with any inquiries or to help you plan your perfect stay at Kolol Resort."
+            subtitle="We're here to assist you with any inquiries or to help you plan your perfect stay at Kolol Riverside Resort."
           />
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -246,7 +246,7 @@ const Index = () => {
                     <MapPin className="w-5 h-5 text-resort-green mt-1 mr-3" />
                     <div>
                       <h4 className="font-medium text-resort-dark">Location</h4>
-                      <p className="text-resort-brown">123 Serenity Road, Mountain View, Nature Province, 10101</p>
+                      <p className="text-resort-brown">Kolol Riverside Resort, Kaptagat Road (B54), Past New KCC, 10km from Eldoret Town, Eldoret, Kenya</p>
                     </div>
                   </div>
                   
@@ -254,7 +254,7 @@ const Index = () => {
                     <Phone className="w-5 h-5 text-resort-green mt-1 mr-3" />
                     <div>
                       <h4 className="font-medium text-resort-dark">Phone</h4>
-                      <p className="text-resort-brown">+1 (555) 123-4567</p>
+                      <p className="text-resort-brown">+254 712 840 300</p>
                     </div>
                   </div>
                   
@@ -262,7 +262,7 @@ const Index = () => {
                     <Mail className="w-5 h-5 text-resort-green mt-1 mr-3" />
                     <div>
                       <h4 className="font-medium text-resort-dark">Email</h4>
-                      <p className="text-resort-brown">info@kololresort.com</p>
+                      <p className="text-resort-brown">kololriversideresort@gmail.com</p>
                     </div>
                   </div>
                 </div>
@@ -282,7 +282,7 @@ const Index = () => {
                 allowFullScreen 
                 loading="lazy" 
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Kolol Resort Map"
+                title="Kolol Riverside Resort Map"
               ></iframe>
             </div>
           </div>
