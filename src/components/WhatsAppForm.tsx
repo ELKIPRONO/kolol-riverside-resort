@@ -33,12 +33,18 @@ export function WhatsAppForm({
   });
 
   const onSubmit = (values: z.infer<typeof formSchema>) => {
+    // Create the exact message text based on the purpose selection
     const text = values.purpose === "booking" 
-      ? "I'd like to book a room at Kolol Riverside Resort"
-      : "I'd like to book an event at Kolol Riverside Resort";
+      ? "Hello, I'd like to book a room at Kolol Riverside Resort."
+      : "Hello, I'd like to book an event at Kolol Riverside Resort.";
     
+    // Ensure the message is properly encoded for WhatsApp URL
     const whatsappUrl = `https://wa.me/254712840300?text=${encodeURIComponent(text)}`;
+    
+    // Open WhatsApp in a new tab
     window.open(whatsappUrl, '_blank');
+    
+    // Close the form dialog
     onOpenChange(false);
   };
 
