@@ -47,7 +47,7 @@ const Index = () => {
   return (
     <>
       <Navbar />
-      <WhatsAppButton text="Book Now" phoneNumber="15551234567" floating={true} />
+      <WhatsAppButton text="Book Now" floating={true} />
       
       {/* Hero Section */}
       <section id="home" className="relative h-screen">
@@ -68,7 +68,7 @@ const Index = () => {
             <p className="text-white text-xl md:text-2xl mb-8 text-shadow">
               A luxurious hideaway nestled in nature's embrace
             </p>
-            <WhatsAppButton text="Book Your Stay" phoneNumber="15551234567" className="text-lg" />
+            <WhatsAppButton text="Book Your Stay" className="text-lg" />
           </div>
         </div>
       </section>
@@ -145,7 +145,7 @@ const Index = () => {
               All rooms include complimentary breakfast, WiFi, and access to resort amenities.
               Special packages and seasonal rates are available.
             </p>
-            <WhatsAppButton text="Inquire About Availability" phoneNumber="15551234567" />
+            <WhatsAppButton text="Inquire About Availability" />
           </div>
         </div>
       </section>
@@ -268,14 +268,14 @@ const Index = () => {
                 </div>
                 
                 <div className="mt-8">
-                  <WhatsAppButton text="Chat With Us" phoneNumber="15551234567" className="w-full justify-center" />
+                  <WhatsAppButton text="Chat With Us" className="w-full justify-center" />
                 </div>
               </div>
             </div>
             
             <div className="h-[400px] rounded-lg overflow-hidden">
               <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26379.99489312452!2d-118.95193905!3d37.74943335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80960c36a64f8825%3A0xc8d13e1c59587a4e!2sMammoth%20Lakes%2C%20CA%2093546!5e0!3m2!1sen!2sus!4v1650000000000!5m2!1sen!2sus" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.754546979146!2d35.320288!3d0.516667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x178101ae37e2d7eb%3A0xa486eea6c0eda4c1!2sKolol%20Riverside%20Resort!5e0!3m2!1sen!2sus!4v1713429708148!5m2!1sen!2sus" 
                 width="100%" 
                 height="100%" 
                 style={{ border: 0 }} 
