@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Mail, MapPin, Phone } from 'lucide-react';
 
@@ -59,7 +60,7 @@ const Footer: React.FC = () => {
             <ul className="space-y-4">
               <li className="flex items-start">
                 <MapPin className="w-5 h-5 text-resort-green mt-1 mr-3" />
-                <span>Kolol Riverside Resort, Kaptagat Road (B54), Past New KCC, 10km from Eldoret Town, Eldoret, Kenya</span>
+                <span>Kolol Riverside Resort, Kaptagat Road (B54), Past New KCC, near Two Rivers Falls and Sunview Estate, 10km from Eldoret Town, Eldoret, Kenya</span>
               </li>
               <li className="flex items-center">
                 <Phone className="w-5 h-5 text-resort-green mr-3" />

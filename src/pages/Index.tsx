@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Bath, Utensils, Wifi, MapPin, Bed, Users, Wine, Coffee, Footprints, Phone, Mail } from 'lucide-react';
 import Navbar from '@/components/Navbar';
@@ -246,7 +247,7 @@ const Index = () => {
                     <MapPin className="w-5 h-5 text-resort-green mt-1 mr-3" />
                     <div>
                       <h4 className="font-medium text-resort-dark">Location</h4>
-                      <p className="text-resort-brown">Kolol Riverside Resort, Kaptagat Road (B54), Past New KCC, 10km from Eldoret Town, Eldoret, Kenya</p>
+                      <p className="text-resort-brown">Kolol Riverside Resort, Kaptagat Road (B54), Past New KCC, near Two Rivers Falls and Sunview Estate, 10km from Eldoret Town, Eldoret, Kenya</p>
                     </div>
                   </div>
                   
@@ -275,7 +276,7 @@ const Index = () => {
             
             <div className="h-[400px] rounded-lg overflow-hidden">
               <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7547456786745!2d35.29848075000001!3d0.5177877499999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x178101ae37e2d7eb%3A0xa486eea6c0eda4c1!2sKolol%20Riverside%20Resort!5e0!3m2!1sen!2sus!4v1713582436778!5m2!1sen!2sus" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.8!2d35.3077!3d0.5172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x178101ae37e2d7eb%3A0xa486eea6c0eda4c1!2sKolol%20Riverside%20Resort!5e0!3m2!1sen!2sus!4v1713583701000!5m2!1sen!2sus" 
                 width="100%" 
                 height="100%" 
                 style={{ border: 0 }} 
