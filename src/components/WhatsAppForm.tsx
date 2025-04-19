@@ -38,15 +38,14 @@ export function WhatsAppForm({
     : "Hello, I'd like to book an event at Kolol Riverside Resort.";
 
   const encodedText = encodeURIComponent(text);
-  const phone = "254712840300";
 
   // Detect if the user is on mobile
   const isMobile = /iPhone|Android|iPad|iPod/i.test(navigator.userAgent);
 
   // Use WhatsApp Web for desktop to avoid desktop app issues
   const whatsappUrl = isMobile
-    ? `https://wa.me/${phone}?text=${encodedText}`
-    : `https://web.whatsapp.com/send?phone=${phone}&text=${encodedText}`;
+    ? `https://wa.me/$254712840300?text=${encodedText}`
+    : `https://web.whatsapp.com/send?phone=$254712840300&text=${encodedText}`;
 
   window.open(whatsappUrl, '_blank');
   onOpenChange(false);
