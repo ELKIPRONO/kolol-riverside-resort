@@ -30,20 +30,27 @@ export function WhatsAppForm({
       phoneNumber: "",
       purpose: "booking",
     },
-  });
+  })
 
-  const onSubmit = (values: z.infer<typeof formSchema>) => {
-    // Create the exact message text based on the purpose selection
-    const text = values.purpose === "booking" 
-      ? "Hello, I'd like to book a room at Kolol Riverside Resort."
-      : "Hello, I'd like to book an event at Kolol Riverside Resort.";
-    
-    // Ensure the message is properly encoded for WhatsApp URL
-    const whatsappUrl = `https://wa.me/254712840300?text=${encodeURIComponent(text)}`;
-    
-    // Open WhatsApp in a new tab
-    window.open(whatsappUrl, '_blank');
-    
+    const onSubmit = (values: z.infer<typeof formSchema>) => {
+  const text = values.purpose === "booking" 
+    ? "Hello, I'd like to book a room at Kolol Riverside Resort."
+    : "Hello, I'd like to book an event at Kolol Riverside Resort.";
+
+  const encodedText = encodeURIComponent(text);
+  const phone = "254712840300";
+
+  // Detect if the user is on mobile
+  const isMobile = /iPhone|Android|iPad|iPod/i.test(navigator.userAgent);
+
+  // Use WhatsApp Web for desktop to avoid desktop app issues
+  const whatsappUrl = isMobile
+    ? `https://wa.me/${phone}?text=${encodedText}`
+    : `https://web.whatsapp.com/send?phone=${phone}&text=${encodedText}`;
+
+  window.open(whatsappUrl, '_blank');
+  onOpenChange(false);
+};
     // Close the form dialog
     onOpenChange(false);
   };
