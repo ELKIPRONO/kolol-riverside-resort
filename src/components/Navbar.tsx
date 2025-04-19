@@ -43,7 +43,7 @@ const Navbar = () => {
             'font-serif text-2xl font-bold text-white',
             isScrolled ? 'text-opacity-100' : 'text-opacity-100'
           )}>
-            Kolol Resort
+            Kolol Riverside Resort
           </h1>
         </a>
 
