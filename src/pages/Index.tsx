@@ -273,7 +273,7 @@ const Index = () => {
             
             <div className="h-[400px] rounded-lg overflow-hidden">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.601184853155!2d35.280134!3d0.5163187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x178101a2fdc53b9b%3A0x250e01071a2d2d2e!2sKolol%20Riverside%20Resort!5e0!3m2!1sen!2ske!4v1713524871011!5m2!1sen!2ske"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15901.494457989783!2d35.345941!3d0.47544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1780fda0e24bbb67%3A0x353e21e01c793abb!2sKolol%20Riverside%20Resort!5e0!3m2!1sen!2ske!4v1713529012345!5m2!1sen!2ske"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
