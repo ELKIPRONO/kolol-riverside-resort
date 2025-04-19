@@ -9,7 +9,6 @@ import GalleryImage from '@/components/GalleryImage';
 import Footer from '@/components/Footer';
 
 const Index = () => {
-  // Room data with placeholder image
   const rooms = [
     {
       name: 'Luxury Suite',
@@ -34,7 +33,6 @@ const Index = () => {
     }
   ];
 
-  // Gallery images with placeholder
   const galleryImages = [
     { src: '/lovable-uploads/a6b15337-f211-4d12-bbca-5d0500bd627a.png', alt: 'Resort Exterior' },
     { src: '/lovable-uploads/a6b15337-f211-4d12-bbca-5d0500bd627a.png', alt: 'Infinity Pool' },
@@ -95,22 +93,22 @@ const Index = () => {
             </div>
             <div className="grid grid-cols-2 gap-4">
               <img 
-                src="https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=2940&auto=format&fit=crop" 
+                src="/lovable-uploads/a6b15337-f211-4d12-bbca-5d0500bd627a.png" 
                 alt="Resort Exterior" 
                 className="rounded-lg shadow-lg object-cover w-full h-64"
               />
               <img 
-                src="https://images.unsplash.com/photo-1532156671491-a56f6d18d9c9?q=80&w=2940&auto=format&fit=crop" 
+                src="/lovable-uploads/a6b15337-f211-4d12-bbca-5d0500bd627a.png" 
                 alt="Resort Pool" 
                 className="rounded-lg shadow-lg object-cover w-full h-64 mt-8"
               />
               <img 
-                src="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?q=80&w=2940&auto=format&fit=crop" 
+                src="/lovable-uploads/a6b15337-f211-4d12-bbca-5d0500bd627a.png" 
                 alt="Resort Environment" 
                 className="rounded-lg shadow-lg object-cover w-full h-64 mt-[-20px]"
               />
               <img 
-                src="https://images.unsplash.com/photo-1596178065887-1198b6148b2b?q=80&w=2940&auto=format&fit=crop" 
+                src="/lovable-uploads/a6b15337-f211-4d12-bbca-5d0500bd627a.png" 
                 alt="Resort Experience" 
                 className="rounded-lg shadow-lg object-cover w-full h-64 mt-[-30px]"
               />
