@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Bath, Utensils, Wifi, MapPin, Bed, Users, Wine, Coffee, Footprints, Phone, Mail } from 'lucide-react';
 import Navbar from '@/components/Navbar';
@@ -10,39 +9,39 @@ import GalleryImage from '@/components/GalleryImage';
 import Footer from '@/components/Footer';
 
 const Index = () => {
-  // Room data
+  // Room data with placeholder image
   const rooms = [
     {
       name: 'Luxury Suite',
       description: 'Our spacious luxury suite offers panoramic views of the mountains and a private balcony for ultimate relaxation.',
       price: '$450',
-      image: 'https://images.unsplash.com/photo-1578683010236-d716f9a3f461?q=80&w=2940&auto=format&fit=crop',
+      image: '/lovable-uploads/a6b15337-f211-4d12-bbca-5d0500bd627a.png',
       features: ['King Bed', 'Private Balcony', 'Mountain View', 'Jacuzzi Bath', 'Mini Bar', 'Room Service']
     },
     {
       name: 'Garden Villa',
       description: 'Nestled among tropical gardens, our garden villa provides a serene retreat with indoor-outdoor living spaces.',
       price: '$650',
-      image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=2940&auto=format&fit=crop',
+      image: '/lovable-uploads/a6b15337-f211-4d12-bbca-5d0500bd627a.png',
       features: ['King Bed', 'Private Garden', 'Plunge Pool', 'Outdoor Shower', 'Kitchenette', 'Patio']
     },
     {
       name: 'Forest Cabin',
       description: 'Experience the magic of the forest in our rustic-luxe cabin with floor-to-ceiling windows and cozy fireplace.',
       price: '$350',
-      image: 'https://images.unsplash.com/photo-1521782462922-9318be1cfd04?q=80&w=2940&auto=format&fit=crop',
+      image: '/lovable-uploads/a6b15337-f211-4d12-bbca-5d0500bd627a.png',
       features: ['Queen Bed', 'Fireplace', 'Forest View', 'Soaking Tub', 'Deck', 'Heated Floors']
     }
   ];
 
-  // Gallery images
+  // Gallery images with placeholder
   const galleryImages = [
-    { src: 'https://images.unsplash.com/photo-1571896349842-33c89424de2d?q=80&w=2960&auto=format&fit=crop', alt: 'Resort Exterior' },
-    { src: 'https://images.unsplash.com/photo-1540541338287-41700207dee6?q=80&w=2940&auto=format&fit=crop', alt: 'Infinity Pool' },
-    { src: 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=2940&auto=format&fit=crop', alt: 'Spa Treatment' },
-    { src: 'https://images.unsplash.com/photo-1560624052-449f5ddf0c31?q=80&w=2835&auto=format&fit=crop', alt: 'Dining Experience' },
-    { src: 'https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?q=80&w=2940&auto=format&fit=crop', alt: 'Suite Interior' },
-    { src: 'https://images.unsplash.com/photo-1601823984263-b87b59798b70?q=80&w=2787&auto=format&fit=crop', alt: 'Sunset View' },
+    { src: '/lovable-uploads/a6b15337-f211-4d12-bbca-5d0500bd627a.png', alt: 'Resort Exterior' },
+    { src: '/lovable-uploads/a6b15337-f211-4d12-bbca-5d0500bd627a.png', alt: 'Infinity Pool' },
+    { src: '/lovable-uploads/a6b15337-f211-4d12-bbca-5d0500bd627a.png', alt: 'Spa Treatment' },
+    { src: '/lovable-uploads/a6b15337-f211-4d12-bbca-5d0500bd627a.png', alt: 'Dining Experience' },
+    { src: '/lovable-uploads/a6b15337-f211-4d12-bbca-5d0500bd627a.png', alt: 'Suite Interior' },
+    { src: '/lovable-uploads/a6b15337-f211-4d12-bbca-5d0500bd627a.png', alt: 'Sunset View' },
   ];
 
   return (
@@ -54,7 +53,7 @@ const Index = () => {
       <section id="home" className="relative h-screen">
         <div className="absolute inset-0">
           <img 
-            src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=3506&auto=format&fit=crop" 
+            src="/lovable-uploads/a6b15337-f211-4d12-bbca-5d0500bd627a.png"
             alt="Kolol Resort" 
             className="w-full h-full object-cover"
           />
@@ -276,7 +275,7 @@ const Index = () => {
             
             <div className="h-[400px] rounded-lg overflow-hidden">
               <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.8!2d35.3077!3d0.5172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x178101ae37e2d7eb%3A0xa486eea6c0eda4c1!2sKolol%20Riverside%20Resort!5e0!3m2!1sen!2sus!4v1713583701000!5m2!1sen!2sus" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7625690284487!2d35.30556661475856!3d0.5171999996264446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x178101ae37e2d7eb%3A0xa486eea6c0eda4c1!2sKolol%20Riverside%20Resort!5e0!3m2!1sen!2ske!4v1624901234567!5m2!1sen!2ske" 
                 width="100%" 
                 height="100%" 
                 style={{ border: 0 }} 
