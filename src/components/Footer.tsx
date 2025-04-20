@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, MapPin, Phone, X } from 'lucide-react';
+import { Mail, MapPin, Phone, X as XIcon } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
@@ -23,7 +23,7 @@ const Footer: React.FC = () => {
                 </svg>
               </a>
               <a href="#" className="text-white hover:text-resort-green transition-colors">
-                <X className="w-5 h-5" />
+                <XIcon className="w-5 h-5" />
               </a>
             </div>
           </div>
