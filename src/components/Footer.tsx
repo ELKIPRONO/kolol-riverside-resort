@@ -1,5 +1,8 @@
+
 import React from 'react';
-import { Mail, MapPin, Phone, X as XIcon } from 'lucide-react';
+import { Mail, MapPin, Phone } from 'lucide-react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faXTwitter } from '@fortawesome/free-brands-svg-icons';
 
 const Footer: React.FC = () => {
   return (
@@ -23,7 +26,7 @@ const Footer: React.FC = () => {
                 </svg>
               </a>
               <a href="#" className="text-white hover:text-resort-green transition-colors">
-                <XIcon className="w-5 h-5" />
+                <FontAwesomeIcon icon={faXTwitter} className="w-5 h-5" />
               </a>
             </div>
           </div>
