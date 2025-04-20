@@ -6,12 +6,11 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
-import { Input } from "./ui/input";
 import { Button } from "./ui/button";
 import { X } from "lucide-react";
 
+// Updated schema to remove phoneNumber
 const formSchema = z.object({
-  phoneNumber: z.string().min(10, "Phone number must be at least 10 digits"),
   purpose: z.enum(["booking", "event"], {
     required_error: "Please select a purpose",
   }),
@@ -27,7 +26,6 @@ export function WhatsAppForm({
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      phoneNumber: "",
       purpose: "booking",
     },
   });
@@ -64,18 +62,6 @@ export function WhatsAppForm({
         </DialogHeader>
         <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
-            <FormField
-              control={form.control}
-              name="phoneNumber"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel>Your WhatsApp Number</FormLabel>
-                  <FormControl>
-                    <Input placeholder="Enter your WhatsApp number" {...field} />
-                  </FormControl>
-                </FormItem>
-              )}
-            />
             <FormField
               control={form.control}
               name="purpose"
