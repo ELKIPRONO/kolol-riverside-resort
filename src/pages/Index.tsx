@@ -35,12 +35,12 @@ const Index = () => {
   ];
 
   const galleryImages = [
-    { src: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80', alt: 'Resort Exterior' },
-    { src: 'https://images.unsplash.com/photo-1433086966358-54859d0ed716?auto=format&fit=crop&w=600&q=80', alt: 'Infinity Pool' },
-    { src: 'https://images.unsplash.com/photo-1487887235947-a955ef187fcc?auto=format&fit=crop&w=600&q=80', alt: 'Spa Treatment' },
-    { src: 'https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?auto=format&fit=crop&w=600&q=80', alt: 'Dining Experience' },
-    { src: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=80', alt: 'Suite Interior' },
-    { src: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80', alt: 'Sunset View' },
+    { src: 'https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=600&q=80', alt: 'Ocean View' },
+    { src: 'https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=600&q=80', alt: 'Forest Wildlife' },
+    { src: 'https://images.unsplash.com/photo-1482938289607-e9573fc25ebb?auto=format&fit=crop&w=600&q=80', alt: 'Riverside Calm' },
+    { src: 'https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?auto=format&fit=crop&w=600&q=80', alt: 'Lush Gardens' },
+    { src: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80', alt: 'Private Villas' },
+    { src: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=80', alt: 'Sunset Deck' },
   ];
 
   return (
@@ -52,8 +52,8 @@ const Index = () => {
       <section id="home" className="relative h-screen">
         <div className="absolute inset-0">
           <img 
-            src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1400&q=80"
-            alt="Kolol Resort" 
+            src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1400&q=80"
+            alt="Luxury Beach Resort" 
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-resort-dark/30"></div>
@@ -94,23 +94,23 @@ const Index = () => {
             </div>
             <div className="grid grid-cols-2 gap-4">
               <img 
-                src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=600&q=80" 
-                alt="Resort Exterior" 
+                src="https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?auto=format&fit=crop&w=600&q=80" 
+                alt="Lush Gardens" 
                 className="rounded-lg shadow-lg object-cover w-full h-64"
               />
               <img 
-                src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" 
-                alt="Resort Pool" 
+                src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=600&q=80"
+                alt="Tropical Beach" 
                 className="rounded-lg shadow-lg object-cover w-full h-64 mt-8"
               />
               <img 
-                src="https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=600&q=80" 
-                alt="Resort Environment" 
+                src="https://images.unsplash.com/photo-1482938289607-e9573fc25ebb?auto=format&fit=crop&w=600&q=80" 
+                alt="River Retreat" 
                 className="rounded-lg shadow-lg object-cover w-full h-64 mt-[-20px]"
               />
               <img 
-                src="https://images.unsplash.com/photo-1433086966358-54859d0ed716?auto=format&fit=crop&w=600&q=80" 
-                alt="Resort Experience" 
+                src="https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=600&q=80" 
+                alt="Forest Wildlife" 
                 className="rounded-lg shadow-lg object-cover w-full h-64 mt-[-30px]"
               />
             </div>
