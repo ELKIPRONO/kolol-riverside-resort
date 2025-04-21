@@ -14,32 +14,32 @@ const Index = () => {
       name: 'Luxury Suite',
       description: 'Our spacious luxury suite offers panoramic views of the mountains and a private balcony for ultimate relaxation.',
       price: '$450',
-      image: '/lovable-uploads/a6b15337-f211-4d12-bbca-5d0500bd627a.png',
+      image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=600&q=80',
       features: ['King Bed', 'Private Balcony', 'Mountain View', 'Jacuzzi Bath', 'Mini Bar', 'Room Service']
     },
     {
       name: 'Garden Villa',
       description: 'Nestled among tropical gardens, our garden villa provides a serene retreat with indoor-outdoor living spaces.',
       price: '$650',
-      image: '/lovable-uploads/a6b15337-f211-4d12-bbca-5d0500bd627a.png',
+      image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80',
       features: ['King Bed', 'Private Garden', 'Plunge Pool', 'Outdoor Shower', 'Kitchenette', 'Patio']
     },
     {
       name: 'Forest Cabin',
       description: 'Experience the magic of the forest in our rustic-luxe cabin with floor-to-ceiling windows and cozy fireplace.',
       price: '$350',
-      image: '/lovable-uploads/a6b15337-f211-4d12-bbca-5d0500bd627a.png',
+      image: 'https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=600&q=80',
       features: ['Queen Bed', 'Fireplace', 'Forest View', 'Soaking Tub', 'Deck', 'Heated Floors']
     }
   ];
 
   const galleryImages = [
-    { src: '/lovable-uploads/a6b15337-f211-4d12-bbca-5d0500bd627a.png', alt: 'Resort Exterior' },
-    { src: '/lovable-uploads/a6b15337-f211-4d12-bbca-5d0500bd627a.png', alt: 'Infinity Pool' },
-    { src: '/lovable-uploads/a6b15337-f211-4d12-bbca-5d0500bd627a.png', alt: 'Spa Treatment' },
-    { src: '/lovable-uploads/a6b15337-f211-4d12-bbca-5d0500bd627a.png', alt: 'Dining Experience' },
-    { src: '/lovable-uploads/a6b15337-f211-4d12-bbca-5d0500bd627a.png', alt: 'Suite Interior' },
-    { src: '/lovable-uploads/a6b15337-f211-4d12-bbca-5d0500bd627a.png', alt: 'Sunset View' },
+    { src: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80', alt: 'Resort Exterior' },
+    { src: 'https://images.unsplash.com/photo-1433086966358-54859d0ed716?auto=format&fit=crop&w=600&q=80', alt: 'Infinity Pool' },
+    { src: 'https://images.unsplash.com/photo-1487887235947-a955ef187fcc?auto=format&fit=crop&w=600&q=80', alt: 'Spa Treatment' },
+    { src: 'https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?auto=format&fit=crop&w=600&q=80', alt: 'Dining Experience' },
+    { src: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=80', alt: 'Suite Interior' },
+    { src: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80', alt: 'Sunset View' },
   ];
 
   return (
@@ -51,7 +51,7 @@ const Index = () => {
       <section id="home" className="relative h-screen">
         <div className="absolute inset-0">
           <img 
-            src="/lovable-uploads/a6b15337-f211-4d12-bbca-5d0500bd627a.png"
+            src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1400&q=80"
             alt="Kolol Resort" 
             className="w-full h-full object-cover"
           />
@@ -93,22 +93,22 @@ const Index = () => {
             </div>
             <div className="grid grid-cols-2 gap-4">
               <img 
-                src="/lovable-uploads/a6b15337-f211-4d12-bbca-5d0500bd627a.png" 
+                src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=600&q=80" 
                 alt="Resort Exterior" 
                 className="rounded-lg shadow-lg object-cover w-full h-64"
               />
               <img 
-                src="/lovable-uploads/a6b15337-f211-4d12-bbca-5d0500bd627a.png" 
+                src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" 
                 alt="Resort Pool" 
                 className="rounded-lg shadow-lg object-cover w-full h-64 mt-8"
               />
               <img 
-                src="/lovable-uploads/a6b15337-f211-4d12-bbca-5d0500bd627a.png" 
+                src="https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=600&q=80" 
                 alt="Resort Environment" 
                 className="rounded-lg shadow-lg object-cover w-full h-64 mt-[-20px]"
               />
               <img 
-                src="/lovable-uploads/a6b15337-f211-4d12-bbca-5d0500bd627a.png" 
+                src="https://images.unsplash.com/photo-1433086966358-54859d0ed716?auto=format&fit=crop&w=600&q=80" 
                 alt="Resort Experience" 
                 className="rounded-lg shadow-lg object-cover w-full h-64 mt-[-30px]"
               />
