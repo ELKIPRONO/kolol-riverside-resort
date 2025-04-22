@@ -49,13 +49,13 @@ export function WhatsAppForm({
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="sm:max-w-[425px] bg-resort-cream border-resort-green">
-        <DialogClose className="absolute right-4 top-4 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none">
-          <X className="h-4 w-4 text-resort-brown" />
+      <DialogContent className="sm:max-w-[425px] bg-white border-[#25D366]/30">
+        <DialogClose className="absolute right-4 top-4 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-[#25D366] focus:ring-offset-2 disabled:pointer-events-none">
+          <X className="h-4 w-4 text-[#25D366]" />
           <span className="sr-only">Close</span>
         </DialogClose>
         <DialogHeader>
-          <DialogTitle className="text-resort-dark font-serif text-2xl text-center">Connect with Kolol</DialogTitle>
+          <DialogTitle className="text-[#25D366] font-serif text-2xl text-center">Connect with Kolol</DialogTitle>
           <p className="text-resort-brown text-center mb-4">Choose how you'd like to get in touch</p>
         </DialogHeader>
         <Form {...form}>
@@ -65,29 +65,29 @@ export function WhatsAppForm({
               name="purpose"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel className="text-resort-dark">Purpose of Contact</FormLabel>
+                  <FormLabel className="text-[#25D366]">Purpose of Contact</FormLabel>
                   <FormControl>
                     <RadioGroup
                       onValueChange={field.onChange}
                       defaultValue={field.value}
                       className="grid grid-cols-2 gap-4"
                     >
-                      <FormItem className="flex items-center space-x-2 space-y-0 bg-white border border-resort-green/20 rounded-lg p-3 hover:bg-resort-cream/50 transition-colors">
+                      <FormItem className="flex items-center space-x-2 space-y-0 bg-white border border-[#25D366]/20 rounded-lg p-3 hover:bg-[#25D366]/10 transition-colors">
                         <FormControl>
                           <RadioGroupItem 
                             value="booking" 
-                            className="border-resort-green text-resort-green focus:ring-resort-green" 
+                            className="border-[#25D366] text-[#25D366] focus:ring-[#25D366]" 
                           />
                         </FormControl>
                         <FormLabel className="font-normal text-resort-brown cursor-pointer">
                           Book a Room
                         </FormLabel>
                       </FormItem>
-                      <FormItem className="flex items-center space-x-2 space-y-0 bg-white border border-resort-green/20 rounded-lg p-3 hover:bg-resort-cream/50 transition-colors">
+                      <FormItem className="flex items-center space-x-2 space-y-0 bg-white border border-[#25D366]/20 rounded-lg p-3 hover:bg-[#25D366]/10 transition-colors">
                         <FormControl>
                           <RadioGroupItem 
                             value="event" 
-                            className="border-resort-green text-resort-green focus:ring-resort-green" 
+                            className="border-[#25D366] text-[#25D366] focus:ring-[#25D366]" 
                           />
                         </FormControl>
                         <FormLabel className="font-normal text-resort-brown cursor-pointer">
