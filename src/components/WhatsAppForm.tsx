@@ -101,7 +101,7 @@ export function WhatsAppForm({
             />
             <Button 
               type="submit" 
-              className="w-full bg-resort-green hover:bg-resort-green/90 text-white flex items-center justify-center gap-2"
+              className="w-full bg-[#25D366] hover:bg-[#25D366]/90 text-white flex items-center justify-center gap-2"
             >
               <Send size={18} />
               Continue to WhatsApp
@@ -112,3 +112,5 @@ export function WhatsAppForm({
     </Dialog>
   );
 }
+
+export default WhatsAppForm;
