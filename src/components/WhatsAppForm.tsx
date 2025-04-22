@@ -7,9 +7,8 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
 import { Button } from "./ui/button";
-import { X } from "lucide-react";
+import { X, Send } from "lucide-react";
 
-// Updated schema to remove phoneNumber
 const formSchema = z.object({
   purpose: z.enum(["booking", "event"], {
     required_error: "Please select a purpose",
@@ -38,10 +37,8 @@ export function WhatsAppForm({
     const encodedText = encodeURIComponent(text);
     const phone = "254712840300";
 
-    // Detect if the user is on mobile
     const isMobile = /iPhone|Android|iPad|iPod/i.test(navigator.userAgent);
 
-    // Use WhatsApp Web for desktop to avoid desktop app issues
     const whatsappUrl = isMobile
       ? `https://wa.me/${phone}?text=${encodedText}`
       : `https://web.whatsapp.com/send?phone=${phone}&text=${encodedText}`;
@@ -52,13 +49,14 @@ export function WhatsAppForm({
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="sm:max-w-[425px]">
+      <DialogContent className="sm:max-w-[425px] bg-resort-cream border-resort-green">
         <DialogClose className="absolute right-4 top-4 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none">
-          <X className="h-4 w-4" />
+          <X className="h-4 w-4 text-resort-brown" />
           <span className="sr-only">Close</span>
         </DialogClose>
         <DialogHeader>
-          <DialogTitle>Contact Us on WhatsApp</DialogTitle>
+          <DialogTitle className="text-resort-dark font-serif text-2xl text-center">Connect with Kolol</DialogTitle>
+          <p className="text-resort-brown text-center mb-4">Choose how you'd like to get in touch</p>
         </DialogHeader>
         <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
@@ -67,26 +65,32 @@ export function WhatsAppForm({
               name="purpose"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Purpose</FormLabel>
+                  <FormLabel className="text-resort-dark">Purpose of Contact</FormLabel>
                   <FormControl>
                     <RadioGroup
                       onValueChange={field.onChange}
                       defaultValue={field.value}
-                      className="flex flex-col space-y-1"
+                      className="grid grid-cols-2 gap-4"
                     >
-                      <FormItem className="flex items-center space-x-3 space-y-0">
+                      <FormItem className="flex items-center space-x-2 space-y-0 bg-white border border-resort-green/20 rounded-lg p-3 hover:bg-resort-cream/50 transition-colors">
                         <FormControl>
-                          <RadioGroupItem value="booking" />
+                          <RadioGroupItem 
+                            value="booking" 
+                            className="border-resort-green text-resort-green focus:ring-resort-green" 
+                          />
                         </FormControl>
-                        <FormLabel className="font-normal">
+                        <FormLabel className="font-normal text-resort-brown cursor-pointer">
                           Book a Room
                         </FormLabel>
                       </FormItem>
-                      <FormItem className="flex items-center space-x-3 space-y-0">
+                      <FormItem className="flex items-center space-x-2 space-y-0 bg-white border border-resort-green/20 rounded-lg p-3 hover:bg-resort-cream/50 transition-colors">
                         <FormControl>
-                          <RadioGroupItem value="event" />
+                          <RadioGroupItem 
+                            value="event" 
+                            className="border-resort-green text-resort-green focus:ring-resort-green" 
+                          />
                         </FormControl>
-                        <FormLabel className="font-normal">
+                        <FormLabel className="font-normal text-resort-brown cursor-pointer">
                           Book an Event
                         </FormLabel>
                       </FormItem>
@@ -95,7 +99,13 @@ export function WhatsAppForm({
                 </FormItem>
               )}
             />
-            <Button type="submit" className="w-full">Continue to WhatsApp</Button>
+            <Button 
+              type="submit" 
+              className="w-full bg-resort-green hover:bg-resort-green/90 text-white flex items-center justify-center gap-2"
+            >
+              <Send size={18} />
+              Continue to WhatsApp
+            </Button>
           </form>
         </Form>
       </DialogContent>
