@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Bath, Utensils, Wifi, MapPin, Bed, Users, Wine, Coffee, Footprints, Phone, Mail } from 'lucide-react';
 import Navbar from '@/components/Navbar';
@@ -14,10 +13,8 @@ const Index = () => {
     {
       name: 'Luxury Suite',
       description: 'Our spacious luxury suite offers panoramic views of the mountains and a private balcony for ultimate relaxation.',
--      price: '$450',
--      image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=600&q=80',
-+      price: '$450',
-+      image: 'https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=600&q=80',
+      price: '$450',
+      image: 'https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=600&q=80',
       features: ['King Bed', 'Private Balcony', 'Mountain View', 'Jacuzzi Bath', 'Mini Bar', 'Room Service']
     },
     {
@@ -296,4 +293,3 @@ const Index = () => {
 };
 
 export default Index;
-
