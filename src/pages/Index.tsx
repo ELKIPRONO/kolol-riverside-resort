@@ -51,8 +51,8 @@ const Index = () => {
       <section id="home" className="relative h-screen">
         <div className="absolute inset-0">
           <img 
-            src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1400&q=80"
-            alt="Luxury Beach Resort" 
+            src="/lovable-uploads/d01b6e01-8a38-4af0-b20b-d783a7425a7f.png"
+            alt="Rustic Cabin at Kolol Resort" 
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-resort-dark/30"></div>
