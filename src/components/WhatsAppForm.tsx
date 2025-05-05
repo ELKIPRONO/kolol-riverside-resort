@@ -49,14 +49,14 @@ export function WhatsAppForm({
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="sm:max-w-[425px] bg-white border-[#25D366]/30">
-        <DialogClose className="absolute right-4 top-4 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-[#25D366] focus:ring-offset-2 disabled:pointer-events-none">
-          <X className="h-4 w-4 text-[#25D366]" />
+      <DialogContent className="sm:max-w-[425px] bg-gray-50 border-[#1a9e48]/40 shadow-lg">
+        <DialogClose className="absolute right-4 top-4 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-[#1a9e48] focus:ring-offset-2 disabled:pointer-events-none">
+          <X className="h-4 w-4 text-[#1a9e48]" />
           <span className="sr-only">Close</span>
         </DialogClose>
         <DialogHeader>
-          <DialogTitle className="text-[#25D366] font-serif text-2xl text-center">Connect with Kolol</DialogTitle>
-          <p className="text-resort-brown text-center mb-4">Choose how you'd like to get in touch</p>
+          <DialogTitle className="text-[#1a9e48] font-serif text-2xl text-center">Connect with Kolol</DialogTitle>
+          <p className="text-gray-600 text-center mb-4">Choose how you'd like to get in touch</p>
         </DialogHeader>
         <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
@@ -65,32 +65,32 @@ export function WhatsAppForm({
               name="purpose"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel className="text-[#25D366]">Purpose of Contact</FormLabel>
+                  <FormLabel className="text-[#1a9e48] font-medium">Purpose of Contact</FormLabel>
                   <FormControl>
                     <RadioGroup
                       onValueChange={field.onChange}
                       defaultValue={field.value}
                       className="grid grid-cols-2 gap-4"
                     >
-                      <FormItem className="flex items-center space-x-2 space-y-0 bg-white border border-[#25D366]/20 rounded-lg p-3 hover:bg-[#25D366]/10 transition-colors">
+                      <FormItem className="flex items-center space-x-2 space-y-0 bg-white border border-[#1a9e48]/20 rounded-lg p-3 hover:bg-[#1a9e48]/5 transition-colors">
                         <FormControl>
                           <RadioGroupItem 
                             value="booking" 
-                            className="border-[#25D366] text-[#25D366] focus:ring-[#25D366]" 
+                            className="border-[#1a9e48] text-[#1a9e48] focus:ring-[#1a9e48]" 
                           />
                         </FormControl>
-                        <FormLabel className="font-normal text-resort-brown cursor-pointer">
+                        <FormLabel className="font-normal text-gray-700 cursor-pointer">
                           Book a Room
                         </FormLabel>
                       </FormItem>
-                      <FormItem className="flex items-center space-x-2 space-y-0 bg-white border border-[#25D366]/20 rounded-lg p-3 hover:bg-[#25D366]/10 transition-colors">
+                      <FormItem className="flex items-center space-x-2 space-y-0 bg-white border border-[#1a9e48]/20 rounded-lg p-3 hover:bg-[#1a9e48]/5 transition-colors">
                         <FormControl>
                           <RadioGroupItem 
                             value="event" 
-                            className="border-[#25D366] text-[#25D366] focus:ring-[#25D366]" 
+                            className="border-[#1a9e48] text-[#1a9e48] focus:ring-[#1a9e48]" 
                           />
                         </FormControl>
-                        <FormLabel className="font-normal text-resort-brown cursor-pointer">
+                        <FormLabel className="font-normal text-gray-700 cursor-pointer">
                           Book an Event
                         </FormLabel>
                       </FormItem>
@@ -101,7 +101,7 @@ export function WhatsAppForm({
             />
             <Button 
               type="submit" 
-              className="w-full bg-[#25D366] hover:bg-[#25D366]/90 text-white flex items-center justify-center gap-2"
+              className="w-full bg-[#1a9e48] hover:bg-[#168a3e] text-white flex items-center justify-center gap-2 shadow-md"
             >
               <Send size={18} />
               Continue to WhatsApp
