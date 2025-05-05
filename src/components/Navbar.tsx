@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { cn } from '@/lib/utils';
@@ -40,8 +41,8 @@ const Navbar = () => {
       <div className="container mx-auto px-4 flex justify-between items-center">
         <a href="#home" className="flex items-center">
           <h1 className={cn(
-            'font-serif text-2xl font-bold text-white',
-            isScrolled ? 'text-opacity-100' : 'text-opacity-100'
+            'font-serif text-2xl font-bold transition-colors duration-300',
+            isScrolled ? 'text-resort-dark' : 'text-white'
           )}>
             Kolol Riverside Resort
           </h1>
